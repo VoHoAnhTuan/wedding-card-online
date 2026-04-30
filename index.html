@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Duyen & Tuan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Floating Assets (JS will populate) -->
+    <div id="particles-container"></div>
+
+    <header>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="reveal" style="transition-delay: 0.2s;">Save the Date</p>
+            <h1 class="reveal" style="transition-delay: 0.5s;">My Duyen & Anh Tuan</h1>
+            <p class="reveal" style="transition-delay: 0.8s;">Saturday, July 18, 2026 • Houston</p>
+        </div>
+    </header>
+
+    <section id="countdown">
+        <div class="section-title reveal">
+            <h2>The Countdown</h2>
+        </div>
+        <div class="countdown-container reveal">
+            <div class="time-box">
+                <span id="days" class="number">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours" class="number">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes" class="number">00</span>
+                <span class="label">Mins</span>
+            </div>
+            <div class="time-box">
+                <span id="seconds" class="number">00</span>
+                <span class="label">Secs</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="story">
+        <div class="section-title reveal">
+            <h2>Our Story</h2>
+        </div>
+        <div class="story-container">
+            <div class="story-text reveal">
+                <h3>The First Chapter</h3>
+                <p>Our story began at Galveston Beach during a Youth Church hangout. What started as a fun day by the
+                    ocean turned into the beginning of something truly beautiful. From that day on, through every shared
+                    prayer and quiet moment, our love has only grown stronger.</p>
+                <p>Now, we can't wait to start our greatest adventure yet, and we are so blessed to have you witness it.
+                </p>
+            </div>
+            <div class="story-img reveal">
+                <img src="assets/gallery1.jpg" alt="Our Journey">
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="section-title reveal">
+            <h2>The Celebration</h2>
+        </div>
+        <div class="event-grid">
+            <div class="event-card reveal">
+                <i class="fas fa-church"></i>
+                <h3>Ceremony</h3>
+                <p style="font-weight: bold;">Lễ Sáng Nhà Thờ</p>
+                <p>10:00 AM</p>
+                <br>
+                <p>Hội Thánh Tin Lành Tây Bắc Houston</p>
+                <p>5133 Addicks Satsuma Rd, Houston, TX 77084</p>
+                <a href="https://maps.app.goo.gl/UaCsui2QEQyCdhVdA" target="_blank"
+                    style="display: block; margin-top: 15px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?cb_client=maps_sv.tactile&w=900&h=600&pitch=0&panoid=YTAA0EnPQ853JgyeXrCx1Q&yaw=0.3502894"
+                        alt="Ceremony Location Thumbnail" style="width: 100%; display: block;">
+                    <div
+                        style="background: var(--secondary); color: var(--white); padding: 8px; font-size: 0.9rem; font-weight: bold;">
+                        View on Google Maps</div>
+                </a>
+            </div>
+            <div class="event-card reveal">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Reception</h3>
+                <p style="font-weight: bold;">Tiệc Tối Nhà Hàng</p>
+                <p>6:00 PM</p>
+                <br>
+                <p>Lam Bo Ballroom</p>
+                <p>6159 Westheimer Rd, Houston, TX 77057</p>
+                <a href="https://maps.app.goo.gl/P9vsycs9LqqSEcmaA" target="_blank"
+                    style="display: block; margin-top: 15px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease;"
+                    onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGsq2eBKs2Ja23Oold4maOI-8QCnN8lH2Fijh7Z4CqOLs_SPXv6vTolXspERpEFdAcChqAWeTmFpE1mAcUp0kwWCesnPTHy8hCNIpUcFlLrVLOckdrWCYoLpmWkiiyK-2xKiTrZ=w600-h400-k-no"
+                        alt="Lam Bo Ballroom Thumbnail" style="width: 100%; display: block;">
+                    <div
+                        style="background: var(--secondary); color: var(--white); padding: 8px; font-size: 0.9rem; font-weight: bold;">
+                        View on Google Maps</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="section-title reveal">
+            <h2>Moments</h2>
+        </div>
+        <div class="carousel-container reveal">
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="assets/hero.jpg" alt="Our Wedding Photo">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/gallery1.jpg" alt="Our Wedding Moment 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/gallery2.jpg" alt="Our Wedding Moment 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/gallery3.jpg" alt="Our Wedding Moment 3">
+                </div>
+            </div>
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-indicators">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp">
+        <div class="rsvp-section reveal" style="margin: 0 auto;">
+            <h2>Are You Joining Us?</h2>
+            <p>Please let us know by <u>June 18, 2026</u>😊</p>
+            </br>
+            <p>Click the button below to let us know if you can make it to our wedding.</p>
+            <p>( Nhấn nút phía dưới và điền thông tin để giúp cho gia đình chuẩn bị chu đáo nhất nhé)</p>
+            <div class="rsvp-form" style="margin-top: 30px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegnQSr9fHcYVvkbL2BwK-fzM_q85tBjKFHt31M8iDeE4ygtQ/viewform?usp=dialog"
+                    target="_blank" rel="noopener noreferrer" class="rsvp-btn">Open RSVP Form</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="thank-you" style="padding: 80px 20px 40px; text-align: center; max-width: 800px; margin: 0 auto;">
+        <div class="thank-you-box reveal"
+            style="border: 2px solid var(--secondary); padding: 50px 40px; border-radius: 20px; position: relative; background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <i class="fas fa-heart"
+                style="color: var(--secondary); font-size: 2.5rem; position: absolute; top: -20px; left: 50%; margin-left: -20px; background: var(--bg); padding: 0 10px; animation: pulseButton 2s infinite; border-radius: 50%;"></i>
+            <p
+                style="font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--primary); line-height: 1.8; font-style: italic;">
+                "Xin chân thành cảm ơn họ hàng, bạn bè, đồng nghiệp, nhà thờ đã thương yêu và luôn cầu nguyện cho Tuấn &
+                Duyên.
+                <br><br>
+                Sự hiện diện của quý vị là nguồn động viên to lớn và là món quà quý giá nhất đối với chúng con."
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content reveal">
+            <h3>D & T</h3>
+            <p>Thank you for being part of our journey.</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.6;">&copy; 2026 Duyen & Tuan Wedding</p>
+            <p style="font-style: italic; font-size: 0.8rem; opacity: 0.6;">Wait until Bubu catches Dudu...</p>
+        </div>
+        <div class="running-pet-container">
+            <img src="assets/boo-dudu-run.gif" alt="Running Pet" class="running-pet">
+        </div>
+        <div class="running-pet-container-2">
+            <img src="assets/bubu-dudu-bubu-run.gif" alt="Running Pet" class="running-pet">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
