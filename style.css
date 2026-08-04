@@ -119,6 +119,15 @@ header {
     transform-origin: center;
 }
 
+.nobr {
+    white-space: nowrap;
+}
+
+.hero-content {
+    padding: 0 20px;
+    z-index: 2;
+}
+
 .hero-content h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -575,7 +584,13 @@ footer {
 
 @media (max-width: 480px) {
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
     }
 
     .carousel-track {
@@ -586,5 +601,121 @@ footer {
     .rsvp-form select,
     .rsvp-form button {
         padding: 12px;
+    }
+
+    .registry-val {
+        font-size: 1.1rem;
+    }
+}
+
+/* Registry / Wishing Well */
+#registry {
+    background: var(--white);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 80px 40px;
+    margin: 40px auto;
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    text-align: center;
+}
+
+.registry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.registry-card {
+    background: var(--bg);
+    border: 1px solid var(--accent);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.registry-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
+}
+
+.registry-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+.registry-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.registry-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.registry-val {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.registry-name {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.copy-btn {
+    padding: 10px 24px;
+    background: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copy-btn:hover {
+    background: transparent;
+    color: var(--primary);
+}
+
+.copy-btn.copied {
+    background: #2e7d32;
+    border-color: #2e7d32;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    #registry {
+        padding: 50px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .registry-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }

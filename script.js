@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(createParticle, 2000);
 
     // Countdown Timer
-    const weddingDate = new Date("July 18, 2026 10:00:00").getTime();
+    const weddingDate = new Date("August 29, 2026 13:00:00").getTime();
     
     const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
@@ -205,4 +205,27 @@ document.addEventListener('DOMContentLoaded', () => {
         
         checkPetCollision();
     }
+
+    // Copy to clipboard functionality
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const textToCopy = btn.getAttribute('data-copy');
+            if (!textToCopy) return;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                btn.classList.add('copied');
+                btn.style.pointerEvents = 'none';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.classList.remove('copied');
+                    btn.style.pointerEvents = 'auto';
+                }, 2000);
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    });
 });
